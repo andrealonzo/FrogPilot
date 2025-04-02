@@ -161,6 +161,11 @@ def setup_frogpilot(build_metadata):
     ("world_frog_day/icons", "theme_packs/frog-animated/icons"),
     ("world_frog_day/signals", "theme_packs/frog/signals"),
     ("world_frog_day/sounds", "theme_packs/frog/sounds"),
+    ("jinbesan/colors", "theme_packs/jinbesan/colors"),
+    ("jinbesan/distance_icons", "theme_packs/jinbesan/distance_icons"),
+    ("jinbesan/icons", "theme_packs/jinbesan/icons"),
+    ("jinbesan/signals", "theme_packs/jinbesan/signals"),
+    ("jinbesan/sounds", "theme_packs/jinbesan/sounds"),
   ]:
     source = Path(HOLIDAY_THEME_PATH) / source_suffix
     destination = THEME_SAVE_PATH / destination_suffix
@@ -169,6 +174,7 @@ def setup_frogpilot(build_metadata):
 
   for source_suffix, destination_suffix in [
     ("world_frog_day/steering_wheel/wheel.png", "steering_wheels/frog.png"),
+    ("jinbesan/steering_wheel/wheel.png", "steering_wheels/kokujira.png"),
   ]:
     source = Path(HOLIDAY_THEME_PATH) / source_suffix
     destination = THEME_SAVE_PATH / destination_suffix
